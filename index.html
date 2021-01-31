@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-light bg-light py-1">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://iro3d.com"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="headerB">
+                <h1>3D printer that prints solid, 100% dense, precise, and strong metal objects</h1>
+            </div>
+        </nav>
+    </header>
+    <section id="mainMenu">
+        <div class="container overflow-hidden">
+            <div class="row gx-5 contentWrapper">
+                <div class="col singleCol">
+                    <div class="p-3  ifrCol">
+                        <iframe src="https://www.youtube.com/embed/IDl57RmASyA?rel=0" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3  bg-light secCol">
+                        <ul id="specSide">
+                            <li><span>SPECS:</span></li>
+                            <li><span>3D Printing process: Selective Powder Deposition (SPD)</span></li>
+                            <li><span>Build volume of Model C: about 279x274x110 mm</span></li>
+                            <li><span>Build volume of Model G: about 610x610x310 mm</span></li>
+                            <li><span>Pourer diameter: 0.9 mm and 1.9 mm</span></li>
+                            <li><span>Layer height: 0.1 to 1 mm (user configurable in GUI)</span></li>
+                            <li><span>Min width of a detail: one pourer diameter</span></li>
+                            <li><span>Min height of a detail: one layer height</span></li>
+                            <li><span>Model C cost: $7,000 + shipping</span></li>
+                            <li><span>Model G cost: $35,000 + shipping</span></li>
+                            <li><span><input type="button" value="ORDER NOW"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="announcement">
+        <div class="alert alert-primary" role="alert">
+            <h2>ANNOUNSMENT</h2>
+            <p>To meet the growing demand, we are starting to look for business partners who would manufacture and sell
+                the
+                printers under their own brand name. We will provide the manufacturing files, the controller board with
+                the
+                firmware, and the software. The printers shall have a label, saying "Licensed by iro3d.com". If
+                interested,
+                please send an email to info@iro3d.com</p>
+        </div>
+    </section>
+    <section id="faq">
+        <h2 id="faqHead">FAQ</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h5>What metals are supported?</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The printer itself is material agnostic, and can pour any powder that
+                        flows though a small hole. In theory, SPD can work with any metal combinations where the infill
+                        metal has lower melting temperature than the powder and the final alloy. But different metals
+                        require different baking conditions. In theory, for not-very-reactive metals, such as iron,
+                        copper, nickel, tin, lead, bismuth, molybdenum, cobalt, tungsten, palladium, cadmium, silver,
+                        gold, platinum - you can use coke (carbon) as a flux. Though, hydrogen atmosphere would provide
+                        much better results. So far, we have tried carbon steel, brass, bronze, copper-iron, and
+                        copper-nickel. Reactive metals, such as chromium, vanadium, titanium - would require a very dry
+                        hydrogen - see Ellingham diagram. Note that the atmosphere requirements for the infill are more
+                        relaxed than for the powder, because the infill is exposed to the atmosphere only briefly, so it
+                        doesn't have much time to oxidize. So, for example, we could infill copper powder with aluminum
+                        alloy to obtain aluminum bronze in an atmosphere which is oxidizing for aluminum. Ceramics
+                        powders are infillable as well. So, we can also print Metal Matrix Composites (MMC), ceramics
+                        and glass. But more research is needed here.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5>What's the shrinkage?</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">There is no shrinkage because the metal powder is not sintered, but
+                        infused with infill metal. There is a very small distortion due to uneven thermal expansion of
+                        different powders. But overall, the size and shape are well preserved.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5>What's the tensile strength?</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">SPD doesn't reduce the strength in any way. The microstructure of the
+                        printed parts is similar to cast ones. The strength of the printed object is determined by the
+                        metal composition, cooling rate, and the atmosphere. Carbon atmosphere tend to increase carbon
+                        content in the print. Also it slows down the infill process, thus increasing the composition
+                        gradient. For the best results, argon + hydrogen atmosphere is recommended. For those metals
+                        that are susceptible hydrogen embrittlement, like high-carbon steel, it's better to replace
+                        hydrogen with argon and hold for a while, letting the hydrogen escape, before cooling down.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <h5>What's the print time?</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Print time very much depends on the size and complexity of the object. Rough average would be about 24 hours.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        <h5>Is there any post-processing required?</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Yes. After filling the crucible with the powders, you would need to bake it in a kiln or furnace.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        <h5>What's the baking temperature?</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The baking temperature must be above the melting temperature of the infill metal but below the melting temperature the build powder and the final alloy.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        <h5>What's the baking hold time?</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The hold time should be sufficient for the heat to get to the middle of the crucible and melt the infill metal. The minimum hold time depends on the size and thermal conductivity of the crucible, the mass, and the difference between the melting temperature of the infill metal and your baking temperature. Usually 2 or 3 hours is sufficient.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        <h5>What kind of kiln is required?</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">For copper infill metal, your kiln should be able to go above the copper melting temperature, which is 1084°C, so most pottery kilns would work. A kiln with programmable digital controller is preferred, because it can be programmed to warm up slowly, to avoid cracking the crucible. A new pottery kiln might cost you about $1000. A used one you might find for a few hundred dollars on Craig's List, if you look for a while. Hydrogen furnace is more expensive, but it would provide better results and would work for a larger variety of metals.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        <h5>Where can I buy the consumables? (metal powders, support powders, infill metal, and crucibles)</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">You can buy the consumables from 3rd parties. In general, for the powder to flow good, the hole should be at least 5-10 times larger than the particle size. So, for example, 200 microns powder would flow well thru 2 mm or larger hole. And 40 microns powder would flow well thru 0.6 mm or larger hole. Powders smaller than 40 microns are not recommended, because they tend to cake, and also they get airborne easier, which would present a health hazard. So, the ideal particle size is 40 microns or larger. The powders and the infill metal shouldn't have too many impurities. For example, reactive metals, especially in the powder, might oxidize and prevent wetting. The crucible should be non-porous, and obviously, should be able to withstand the baking temperature. From MetalShipper you can buy zinc and copper infill. Other things form atomwell.com and TriDPrinting.com.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                        <h5>What are the practical applications for SPD?</h5>
+                    </button>
+                </h2>
+                <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">There are many:<br>
+                        Molds and mold cores (for plastic injection molding) with conformal cooling channels.<br>
+                        The rocket engines.<br>
+                        Large ship propellers in nickel aluminum bronze..
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="socialSide">
+        <div class="detLas">
+            <div class="iconSi">
+                <ul><li><img src="images/fb.svg" alt="facebook"></li>
+                    <li><img src="images/youtube.svg" alt="youtube"></li>
+                    <li><img src="images/tw.svg" alt="twitter"></li>
+                </ul>
+            </div>
+            <div class="detailSi">
+                <span><p>See photos of iro3d printer</p></span>
+                <span><p>See photos of 3D printed objects Sitemap</p></span>
+            </div>
+        </div>
+    </section>
+    <footer>
+       <span> &copy 2021</span>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
