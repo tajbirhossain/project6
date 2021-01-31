@@ -12,7 +12,8 @@ header h1 {
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: #cfe2ff !important;
+    background-color: #1d4354 !important;
+    color: white;
 }
 .container-fluid {
     width: 15%;
@@ -55,14 +56,20 @@ iframe {
     border-radius: 5px;
 }
 #specSide input {
-    background-color: #cfe2ff;
-    border: 1.5px solid #aeaeff;
+    background-color: #37a000;
+    border: none;
     border-radius: 5px;
     outline: none;
     padding: 6px 10px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
     margin: 20px 0;
+    color: #fff;
+    transition: .3s;
+}
+#specSide input:hover {
+    background: #328b02;
+    color: #f1f2f4;
 }
 .contentWrapper {
     display: flex;
@@ -81,6 +88,7 @@ iframe {
 }
 .alert {
     color: #000;
+    background: #fff;
 }
 .accordion-item {
     margin: 0 15px;
@@ -92,15 +100,26 @@ iframe {
 #faq {
     background-color: #f1f2f4;
 }
+.accordion-button h5 {
+    transition: .3s;
+}
+.accordion-button h5:hover {
+    color: #37a000;
+}
 #faqHead {
     margin-left: 35px;
 }
 .iconSi ul li {
     list-style: none;
 }
-.iconSi ul li img {
-    width: 60px;
+.iconSi ul li i {
+    font-size: 40px;
     margin: 10px;
+    transition: .3s;
+}
+.iconSi ul li i:hover {
+    color: #37a000;
+    cursor: pointer;
 }
 .iconSi ul {
     display: flex;
@@ -110,7 +129,8 @@ iframe {
 }
 #socialSide {
     padding: 30px 0;
-    background: #cfe2ff;
+    background: #1d4354;
+    color: #fff;
 }
 .iconSi {
     width: 40%;
@@ -125,11 +145,19 @@ iframe {
     align-items: center;
     flex-direction: column;
 }
+.detailSi span p {
+    transition: .3s;
+}
+.detailSi span p:hover {
+    color: #37a000;
+    cursor: pointer;
+}
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #49505d;
+    background: #1d4354;
+    border-top: 1px solid;
     color: #fff;
 }
 @media (max-width: 993px) {
