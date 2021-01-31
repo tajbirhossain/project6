@@ -200,3 +200,8 @@ footer {
         margin: 0;
     }
 }
+@media (max-width: 390px) {
+    .ifrCol {
+        height: 330px;
+    }
+}
