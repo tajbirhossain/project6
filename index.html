@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>iro3d - metal 3D printer</title>
     <link rel="stylesheet" href="css/home.css">
     <script src="https://kit.fontawesome.com/85001c8154.js" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar sticky-top navbar-light bg-light py-1">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://iro3d.com"><img src="images/logo.png" alt="logo"></a>
+                <img src="images/logo.png" alt="logo">
             </div>
             <div class="headerB">
                 <h1>3D printer that prints solid, 100% dense, precise, and strong metal objects</h1>
@@ -40,14 +40,18 @@
                         <ul id="specSide">
                             <li><span id="lineSp">SPECS:</span></li>
                             <li><span>3D Printing process: Selective Powder Deposition (SPD)</span></li>
-                            <li><span>Build volume of Model C: about 279x274x110 mm</span></li>
-                            <li><span>Build volume of Model G: about 610x610x310 mm</span></li>
+                            <li><span>Build volume of <a href="https://photos.app.goo.gl/qecXWm47HVgyArSM8"
+                                        target="_blank">Model C</a>: about 279x274x110 mm</span></li>
+                            <li><span>Build volume of <a href="https://photos.app.goo.gl/PRmogL9XfJEgZ5Xe6"
+                                        target="_blank">Model G</a>: about 610x610x310 mm</span></li>
                             <li><span>Pourer diameter: 0.9 mm and 1.9 mm</span></li>
                             <li><span>Layer height: 0.1 to 1 mm (user configurable in GUI)</span></li>
                             <li><span>Min width of a detail: one pourer diameter</span></li>
                             <li><span>Min height of a detail: one layer height</span></li>
-                            <li><span>Model C cost: $7,000 + shipping</span></li>
-                            <li><span>Model G cost: $35,000 + shipping</span></li>
+                            <li><span><a href="https://photos.app.goo.gl/qecXWm47HVgyArSM8" target="_blank">Model C</a>
+                                    cost: $7,000 + shipping</span></li>
+                            <li><span><a href="https://photos.app.goo.gl/PRmogL9XfJEgZ5Xe6" target="_blank">Model G</a>
+                                    cost: $35,000 + shipping</span></li>
                             <li><span><input type="button" value="ORDER NOW"></span></li>
                         </ul>
                     </div>
@@ -64,7 +68,7 @@
                 the
                 firmware, and the software. The printers shall have a label, saying "Licensed by iro3d.com". If
                 interested,
-                please send an email to info@iro3d.com</p>
+                please send an email to <a target="_blank" href="mailto:info@iro3d.com">info@iro3d.com</a></p>
         </div>
     </section>
     <section id="faq">
@@ -80,18 +84,27 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">The printer itself is material agnostic, and can pour any powder that
-                        flows though a small hole. In theory, SPD can work with any metal combinations where the infill
+                        flows though a small hole. <a href="https://en.wikipedia.org/wiki/Ellingham_diagram"
+                            target="_blank">In theory</a>, SPD can work with any metal combinations where the infill
                         metal has lower melting temperature than the powder and the final alloy. But different metals
                         require different baking conditions. In theory, for not-very-reactive metals, such as iron,
                         copper, nickel, tin, lead, bismuth, molybdenum, cobalt, tungsten, palladium, cadmium, silver,
                         gold, platinum - you can use coke (carbon) as a flux. Though, hydrogen atmosphere would provide
                         much better results. So far, we have tried carbon steel, brass, bronze, copper-iron, and
                         copper-nickel. Reactive metals, such as chromium, vanadium, titanium - would require a very dry
-                        hydrogen - see Ellingham diagram. Note that the atmosphere requirements for the infill are more
+                        hydrogen - see <a href="http://web.mit.edu/2.813/www/readings/Ellingham_diagrams.pdf"
+                            target="_blank">Ellingham diagram</a>. Note that the atmosphere requirements for the infill
+                        are more
                         relaxed than for the powder, because the infill is exposed to the atmosphere only briefly, so it
                         doesn't have much time to oxidize. So, for example, we could infill copper powder with aluminum
-                        alloy to obtain aluminum bronze in an atmosphere which is oxidizing for aluminum. Ceramics
-                        powders are infillable as well. So, we can also print Metal Matrix Composites (MMC), ceramics
+                        alloy to obtain <a
+                            href="https://www.copper.org/publications/newsletters/innovations/2002/08/aluminum_bronze.pdf"
+                            target="_blank">aluminum bronze</a> in an atmosphere which is oxidizing for aluminum.
+                        Ceramics
+                        powders <a
+                            href="https://drive.google.com/drive/folders/1I-PH883wotPM_nqUlzZ-cJqpbiT3TceO?usp=sharing"
+                            target="_blank">are infillable</a> as well. So, we can also print Metal Matrix Composites
+                        (MMC), ceramics
                         and glass. But more research is needed here.</div>
                 </div>
             </div>
@@ -137,7 +150,8 @@
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Print time very much depends on the size and complexity of the object. Rough average would be about 24 hours.
+                    <div class="accordion-body">Print time very much depends on the size and complexity of the object.
+                        Rough average would be about 24 hours.
                     </div>
                 </div>
             </div>
@@ -150,7 +164,8 @@
                 </h2>
                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Yes. After filling the crucible with the powders, you would need to bake it in a kiln or furnace.
+                    <div class="accordion-body">Yes. After filling the crucible with the powders, you would need to bake
+                        it in a kiln or furnace.
                     </div>
                 </div>
             </div>
@@ -163,7 +178,8 @@
                 </h2>
                 <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">The baking temperature must be above the melting temperature of the infill metal but below the melting temperature the build powder and the final alloy.
+                    <div class="accordion-body">The baking temperature must be above the melting temperature of the
+                        infill metal but below the melting temperature the build powder and the final alloy.
                     </div>
                 </div>
             </div>
@@ -176,7 +192,10 @@
                 </h2>
                 <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">The hold time should be sufficient for the heat to get to the middle of the crucible and melt the infill metal. The minimum hold time depends on the size and thermal conductivity of the crucible, the mass, and the difference between the melting temperature of the infill metal and your baking temperature. Usually 2 or 3 hours is sufficient.
+                    <div class="accordion-body">The hold time should be sufficient for the heat to get to the middle of
+                        the crucible and melt the infill metal. The minimum hold time depends on the size and thermal
+                        conductivity of the crucible, the mass, and the difference between the melting temperature of
+                        the infill metal and your baking temperature. Usually 2 or 3 hours is sufficient.
                     </div>
                 </div>
             </div>
@@ -189,7 +208,12 @@
                 </h2>
                 <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">For copper infill metal, your kiln should be able to go above the copper melting temperature, which is 1084°C, so most pottery kilns would work. A kiln with programmable digital controller is preferred, because it can be programmed to warm up slowly, to avoid cracking the crucible. A new pottery kiln might cost you about $1000. A used one you might find for a few hundred dollars on Craig's List, if you look for a while. Hydrogen furnace is more expensive, but it would provide better results and would work for a larger variety of metals.
+                    <div class="accordion-body">For copper infill metal, your kiln should be able to go above the copper
+                        melting temperature, which is 1084°C, so most pottery kilns would work. A kiln with programmable
+                        digital controller is preferred, because it can be programmed to warm up slowly, to avoid
+                        cracking the crucible. A new pottery kiln might cost you about $1000. A used one you might find
+                        for a few hundred dollars on Craig's List, if you look for a while. Hydrogen furnace is more
+                        expensive, but it would provide better results and would work for a larger variety of metals.
                     </div>
                 </div>
             </div>
@@ -197,12 +221,26 @@
                 <h2 class="accordion-header" id="flush-headingNine">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                        <h5>Where can I buy the consumables? (metal powders, support powders, infill metal, and crucibles)</h5>
+                        <h5>Where can I buy the consumables? (metal powders, support powders, infill metal, and
+                            crucibles)</h5>
                     </button>
                 </h2>
                 <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">You can buy the consumables from 3rd parties. In general, for the powder to flow good, the hole should be at least 5-10 times larger than the particle size. So, for example, 200 microns powder would flow well thru 2 mm or larger hole. And 40 microns powder would flow well thru 0.6 mm or larger hole. Powders smaller than 40 microns are not recommended, because they tend to cake, and also they get airborne easier, which would present a health hazard. So, the ideal particle size is 40 microns or larger. The powders and the infill metal shouldn't have too many impurities. For example, reactive metals, especially in the powder, might oxidize and prevent wetting. The crucible should be non-porous, and obviously, should be able to withstand the baking temperature. From MetalShipper you can buy zinc and copper infill. Other things form atomwell.com and TriDPrinting.com.
+                    <div class="accordion-body">You can buy the consumables from 3rd parties. In general, for the powder
+                        to flow good, the hole should be at least 5-10 times larger than the particle size. So, for
+                        example, 200 microns powder would flow well thru 2 mm or larger hole. And 40 microns powder
+                        would flow well thru 0.6 mm or larger hole. Powders smaller than 40 microns are not recommended,
+                        because they tend to cake, and also they get airborne easier, which would present a health
+                        hazard. So, the ideal particle size is 40 microns or larger. The powders and the infill metal
+                        shouldn't have too many impurities. For example, reactive metals, especially in the powder,
+                        might oxidize and prevent wetting. The crucible should be non-porous, and obviously, should be
+                        able to withstand the baking temperature. From MetalShipper you can buy <a
+                            href="https://www.metalshipper.com/zinc.html" target="_blank">zinc</a> and <a
+                            href="https://www.metalshipper.com/copper-chop.html" target="_blank">copper</a> infill.
+                        Other things form <a href="https://shop.atomwell.com/collections/all"
+                            target="_blank">atomwell.com</a> and <a href="http://www.tridprinting.com/Iro3d/"
+                            target="_blank">TriDPrinting.com</a>.
                     </div>
                 </div>
             </div>
@@ -216,9 +254,15 @@
                 <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">There are many:<br>
-                        Molds and mold cores (for plastic injection molding) with conformal cooling channels.<br>
-                        The rocket engines.<br>
-                        Large ship propellers in nickel aluminum bronze..
+                        Molds and mold cores (for plastic injection molding) with <a
+                            href="https://www.google.com/search?q=conformal+cooling+channels&amp;client=ubuntu&amp;hl=en&amp;sxsrf=ALeKk00GumPqh0f0ofqcKaueSphStd-npA:1583881270059&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjc997DgZHoAhWhoFsKHX4pCLkQ_AUoAXoECA4QAw&amp;biw=1920&amp;bih=1008"
+                            target="_blank">conformal cooling channels</a> channels.<br>
+                        The <a
+                            href="https://www.google.com/search?q=3d+printed+rocket+engines&amp;tbm=isch&amp;ved=2ahUKEwja3LLFgZHoAhX8IzQIHV5eAS8Q2-cCegQIABAA&amp;oq=3d+printed+rocket+engine&amp;gs_l=img.1.0.35i39j0l2j0i8i30j0i24.1120054.1123217..1123660...0.0..0.110.397.2j2......0....1..gws-wiz-img.......0i131j0i67.17KuG2yDdYE&amp;ei=ORxoXprcH_zH0PEP3ryF-AI&amp;bih=1008&amp;biw=1920&amp;client=ubuntu&amp;hl=en"
+                            target="_blank">rocket engines</a>.<br>
+                        Large ship propellers in <a
+                            href="https://www.copper.org/applications/marine/nickel_al_bronze/pub-222-nickel-al-bronze-guide-engineers.pdf"
+                            target="_blank">nickel aluminum bronze</a>..
                     </div>
                 </div>
             </div>
@@ -227,19 +271,26 @@
     <section id="socialSide">
         <div class="detLas">
             <div class="iconSi">
-                <ul><li><i class="fab fa-facebook"></i></li>
-                    <li><i class="fab fa-youtube"></i></li>
-                    <li><i class="fab fa-twitter-square"></i></li>
+                <ul>
+                    <li><a href="https://www.facebook.com/iro3d/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                      </a></li>
+                    <li><a href="https://www.youtube.com/channel/UCYqYFxzYr444h-dXELKiRGA" target="_blank">
+                            <i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
             <div class="detailSi">
-                <span><p>See photos of iro3d printer</p></span>
-                <span><p>See photos of 3D printed objects Sitemap</p></span>
+                <span>
+                    <p><a href="https://photos.app.goo.gl/qecXWm47HVgyArSM8" target="_blank">photos of iro3d printer</a></p>
+                </span>
+                <span>
+                    <p><a href="https://photos.app.goo.gl/XKTUwWW97vwsXR95A" target="_blank">photos of 3D printed objects</a></p>
+                </span>
             </div>
         </div>
     </section>
     <footer>
-       <span> &copy 2021</span>
+        <span> &copy 2021</span>
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
