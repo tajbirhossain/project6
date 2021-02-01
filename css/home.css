@@ -211,7 +211,7 @@ footer {
     }
     .container-fluid {
         margin: 0;
-        width: 110px;
+        width: 125px;
         padding: 0;
     }
     .container-fluid a {
@@ -252,7 +252,7 @@ footer {
         list-style: none;
     }
     .accordion-item {
-        margin: 0;
+        margin: 20px 5px;
     }
 }
 @media (max-width: 390px) {
