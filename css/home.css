@@ -5,6 +5,9 @@
 body {
     background-color: #f1f2f4;
 }
+body a {
+    color: #37a000;
+}
 header h1 {
     text-transform: uppercase;
     font-size: 27px;
@@ -137,6 +140,7 @@ iframe {
     font-size: 35px;
     margin: 10px;
     transition: .3s;
+    color: #fff;
 }
 .iconSi ul li:hover {
     color: #37a000;
@@ -166,10 +170,11 @@ iframe {
     align-items: center;
     flex-direction: column;
 }
-.detailSi span p {
+.detailSi span a {
     transition: .3s;
+    color: #fff;
 }
-.detailSi span p:hover {
+.detailSi span a:hover {
     color: #37a000;
     cursor: pointer;
 }
